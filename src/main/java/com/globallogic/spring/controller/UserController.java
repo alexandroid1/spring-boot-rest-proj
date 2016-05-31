@@ -1,6 +1,7 @@
 package com.globallogic.spring.controller;
 
 import com.globallogic.spring.entity.User;
+import com.globallogic.spring.entity.request.AddUserRequest;
 import com.globallogic.spring.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
