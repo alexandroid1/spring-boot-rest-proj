@@ -3,6 +3,7 @@ package com.globallogic.spring.entity;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.util.Date;
 
 /**
  * Created by ALEX on 31.05.2016.
@@ -17,7 +18,9 @@ public class User {
 
     private String name;
 
-    private String surname;
+    private String address;
+
+    private Date birthday;
 
     public long getId() {
         return id;
@@ -35,11 +38,19 @@ public class User {
         this.name = name;
     }
 
-    public String getSurname() {
-        return surname;
+    public String getAddress() {
+        return address;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
     }
 }

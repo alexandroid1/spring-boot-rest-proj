@@ -1,12 +1,17 @@
 package com.globallogic.spring.entity.request;
 
+import java.util.Date;
+
 /**
  * Created by ALEX on 31.05.2016.
  */
 public class AddUserRequest {
 
     private String name;
-    private String surname;
+
+    private String address;
+
+    private Date birthday;
 
     public String getName() {
         return name;
@@ -16,11 +21,23 @@ public class AddUserRequest {
         this.name = name;
     }
 
-    public String getSurname() {
-        return surname;
+    public String getAddress() {
+        return address;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setAddress(String address) {
+        this.address = address;
     }
+
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
+
+
+
+
 }

@@ -31,6 +31,10 @@ public class UserController {
 
     @RequestMapping(method = RequestMethod.POST)
     public void addUser(@RequestBody AddUserRequest addUserRequest){
-
+        User user = new User();
+        user.setName(addUserRequest.getName());
+        user.setAddress(addUserRequest.getAddress());
+        user.setBirthday(addUserRequest.getBirthday());
+        userRepository.save(user);
     }
 }
